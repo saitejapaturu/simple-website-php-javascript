@@ -1,0 +1,620 @@
+
+/* CSS PART-1(Lines-1 to 449) done by s3644335, Sri Sai Teja Paturu */
+
+/* Fonts imported from Google fonts, used for educational purpose only. */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway:300|Roboto');
+
+*{
+    font-family:  'Open Sans', Helvetica, sans-serif;
+ }
+
+/* Header's CSS */
+header {
+    /* Original image below sourced for educational purposes: https://outdoorfact.com/best-camping-gadgets-and-tools*/
+    background-image: url(../media/HI.jpg);
+    background-size: cover;
+    width:100%;
+    height:400px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+    header h2{
+        padding-top: 120px;
+        margin: 0px;
+    }
+
+    .logo
+    {
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+        height: 200px;
+    }
+/* End of Header's CSS */
+
+
+/* Navigation's CSS */
+nav ul 
+    {
+        margin-left: auto;
+        margin-right: auto;
+        list-style-type: none;
+        padding: 0;
+        width: 75%;
+    }
+
+    nav li 
+        {
+            float: left;
+            width: 25%;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+        }
+
+    nav a 
+        {
+            display: block;
+            padding: 8px;
+            text-align: center;
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+            font-size: 19px;
+            color: black;
+            background-color:#7C809B;
+        }
+    
+    nav li a:hover:not(.active) 
+        {
+            color:#EDE3E1;
+        }
+
+    .active 
+        {
+        color: #212227;
+        background-color:#EDE3E1;   
+        }
+    
+        
+    /* Line effect when hovered */
+    nav a::before
+    {
+        content: "";
+        display: block;
+        height:1.7px;
+        background-color: #EDE3E1;
+        width: 0%;
+        transition: all ease-in-out 250ms;
+    }
+    nav a:hover::before
+    {
+        width: 100%;
+    }
+    /* End of Line effect when hovered */
+
+/* End of Navigation's CSS */
+     
+
+/* Body's CSS */
+body
+{
+    background: #EDE3E1 url(../media/BG.png) ;
+    background-size: cover;
+    background-attachment: fixed;
+    margin:0px;
+}
+/* End of body's CSS */
+
+/* Main CSS */
+main{
+    border: 2px;
+    border: #212227;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+/* CSS for headings */
+.heading
+{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+/* End of main's Css */
+
+
+/* Accomodation's CSS */
+.Accomodation-box
+    {   
+        width: 370px;
+        display: inline-block;
+        padding: 0px;
+        margin: 0px;
+
+        background: inherit;
+        color: white;
+        border-radius: 34px;
+        
+     }
+
+     .Accomodation-form-box
+    {   
+        height: 630px;
+        width: 390px;
+        display: inline-block;
+        padding: 5px;
+        padding-top: 2px;
+        background: #414562;
+        color: white;
+        
+        margin-bottom: 35px;
+        margin-top: 35px;
+        margin-right: 20px;
+        margin-left:20px;
+        
+        box-shadow: 10px 10px 10px black;
+     
+        border-radius: 34px;
+     }
+
+     .All-Accommodation-boxes
+     {
+         text-align: center;
+     }
+     .Accomodation-left
+    {
+        text-align: left;
+    }
+
+/* images */
+.image
+    {
+        width: 355px;
+        height: 250px;
+    }
+
+/* Button of sites when unselected */
+.site-button-unselected
+    {
+        border: solid 2px #414562;
+        background-color: #414562;
+        padding: 5px;
+        padding-top: 2px;
+        border-radius: 34px;
+
+        height: 630px;
+        width: 390px;
+        margin-bottom: 35px;
+        margin-top: 35px;
+        margin-right: 20px;
+        margin-left:20px;
+
+        box-shadow: 10px 10px 10px black;
+        
+
+        transition-duration: 200ms;
+    }
+/* Site button when selected */
+    .site-button-selected
+    {
+        border: solid 2px #3071A9;
+        background-color: #3071A9;
+
+        padding: 5px;
+        padding-top: 2px;
+        border-radius: 34px;
+
+        height: 630px;
+        width: 390px;
+        margin-bottom: 35px;
+        margin-top: 35px;
+        margin-right: 20px;
+        margin-left:20px;
+    }
+    
+/* Button of sites when unselected and hovered */
+.site-button-unselected:hover
+    {
+        border: solid 2px #3071A9;
+        background-color: #3071A9;
+        /* box-shadow: 0px 0px 20px 0px black; */
+        box-shadow: 0px 0px 0px black;
+    }
+
+.site-description
+    {
+        /* font-size: 14px; */
+        max-width: 355px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+.contact-us
+    {
+        color: #31A6FF;
+    }
+    
+.contact-us:hover 
+    {
+        color: black;
+    }   
+    /* Form's CSS */
+
+.form-image
+    {
+        width: 375px;
+        height: 140px;
+    }
+form input
+    {
+        padding: 2px;
+    }
+
+form select
+    {
+        border: 5px;
+    }
+
+    /* Font color for error message */
+    #serverSideError
+    {
+        color: red;
+    }
+
+.submit
+    {
+        font-size: 19px;
+        width: 125px;
+        height: 45px;
+        padding: 5px;
+        padding-top: 2px;
+        border-radius: 4px;
+
+        box-shadow: 2px 2px 5px black;
+
+        border: solid 2px #3071A9;
+        background-color: #3071A9;
+        color: white;
+
+        transition-duration: 200ms;
+    }
+
+.submit:hover
+    {
+
+        box-shadow: 0px 0px 0px black;
+
+        border-color: #31A6FF;
+        background-color: #31A6FF;
+    }
+    /* End of Form CSS */
+
+/* End of Accomodation CSS */
+
+    
+/* CSS for rates page */
+table
+    {
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
+        border-collapse: collapse;
+    }
+
+th
+    {
+        font-size: 115%;
+        background-color:#414562;
+        color: white;
+    }
+
+td
+    {
+        background-color: rgba(32, 31, 61, 0.185) ;
+        font-size: 105%;
+        text-align: center;
+    }
+
+tr:nth-child(odd) td
+    {
+        background-color: rgba(211, 211, 211, 0.411);
+    }
+    
+table caption
+    {
+        font-family: 'Raleway', sans-serif;
+        font-size: 40px;
+    }
+/* CSS for rates page */
+
+    /* Footer's CSS */
+    footer    
+    {
+        position: fixed;
+        background-color: lightgray;
+        font-size: 12px;
+        bottom:0;
+        width: 100%;
+    }
+    
+    footer p
+    {
+        margin: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+/* End of Footer's CSS */
+
+/* When screen width is less than or equal to 750px */
+@media only screen and (max-width: 750px) 
+{
+    body
+    {
+        font-size: 12px
+    }
+
+    header 
+        {
+            background-size: cover;
+            width:750px;
+        }
+    
+    header h2
+        {
+            padding-top: 140px;
+        }
+    
+    .logo
+        {
+            width: 250px;
+            height: 170px;
+        }
+
+    nav
+        {
+            margin-bottom: 200px;
+        }
+
+    nav ul 
+        {
+            width:100%;
+        }
+    
+    nav li 
+        {
+            width: 100%;
+            border: 1px solid #e7e7e7;
+        }
+
+main
+    {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .index-content 
+    {
+        font-size: 12px;
+    }
+
+    .index-text
+    {
+        font-size: 0.7em;
+    }
+
+    .index-image 
+    {
+        width: 300px;
+    }
+}
+/* When screen width is less than or equal to 750px */
+
+/* When screen width is less than or equal to 985px */
+@media only screen and (max-width: 985px) 
+{
+.Accomodation-form-box
+    {
+        width: 70%;
+        min-width: 390px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+.site-button-unselected
+    {
+        width: 70%;
+        min-width: 390px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+/* Change Later */
+    .site-button-selected
+    {
+        width: 70%;
+        min-width: 390px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+}
+/* When screen width is less than or equal to 985px */
+
+
+.contact-sign-up
+{
+    position: absolute;
+    display: block;
+    left: 295px;
+    margin-top: 12px;
+    /* width: calc(90% - 360px); */
+}
+
+.contact-section
+{
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.contact-submit
+{
+    text-align: center;
+    
+}
+/* End of Part-1 CSS */
+
+
+
+
+
+/* CSS PArt-2 done by Eyup Keskin */
+
+.index-section
+{
+    position: relative;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    height: 430px;
+}
+
+.index-content {
+    position: absolute;
+    display: inline-block;
+    left: 50%;
+    padding-right: 10%;
+    padding-top: 10px;
+    height: 430px;
+    font-family:  'Open Sans', Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.index-image {
+    position: absolute;
+    padding-left: 5%;
+    width: 40%;
+}
+
+.contact-sign-up
+{
+    position: absolute;
+    display: block;
+    left: 295px;
+    margin-top: 12px;
+    /* width: calc(90% - 360px); */
+}
+
+.contact-label {
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    left: 140px;
+    width: 140px;
+}
+
+.contact-input {
+    position: absolute;
+    display: block;
+    left: 300px;
+    width: calc(90% - 360px);
+}
+
+.contact-textarea {
+    position: absolute;
+    display: block;
+    left: 300px;
+    width: calc(90% - 360px);
+    height: 100px;
+    border: none;
+    font-size: 11;
+}
+
+.contact-checkbox {
+    position: absolute;
+    left: 295px;
+}
+
+.contact-error {
+    position: absolute;
+    left: 300px;
+    font-size: 10px;
+    color: red;
+    padding-top: 15px;
+}
+
+.index-text
+{
+    font-size-adjust: initial;
+    height: 430px;
+}
+
+/* End of Part-2 */
+
+/* For the debug: */
+
+@media print {
+    aside#debug {
+        display: none;
+    }
+}
+
+/* For booking: */
+
+.booking-label {
+    position: absolute;
+    width: 200px;
+    font-family: 'Roboto', sans-serif;
+    left: 130px;
+    text-align: right;
+}
+
+.booking-description {
+    position: absolute;
+    left: 350px;
+}
+
+.booking-info {
+    position: relative;
+    width: 95%;
+}
+
+/* For receipt: */
+
+.receipt-label {
+    left: 2%;
+    position: absolute;
+}
+
+.receipt-span {
+    right: 5%;
+    position: absolute;
+}
+
+.receipt-div {
+    border: 5px solid;
+    border-color: #3071A9;
+    border-radius: 15px;
+    background-color: white;
+    position: relative;
+    width: 50%;
+    left: 25%;
+}
+
+.receipt-heading {
+    font-size: 42px;
+    text-align: center;
+}
+
+.receipt-subheading {
+    padding-left: 2%;
+}
